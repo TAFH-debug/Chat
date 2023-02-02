@@ -4,9 +4,19 @@ root = Tk()
 root.title("Chat")
 root.geometry("600x400")
 
-menu = Menu(root)
+def con():
+    text.insert(1.0, "\n Hello World.")
+
+menu = Menu(root, tearoff=0)
+chatmenu = Menu(menu, tearoff=0)
+menu.add_cascade(label="Chat", menu=chatmenu)
+chatmenu.add_command(label="Connect", command=con)
+
 root.config(menu=menu)
 
-label = Label(root, text="Chat", font=("Arial", 64), foreground="cyan")
+text = Text(root)
 
+label = Label(root, text="Chat", font=("Arial", 64), foreground="cyan")
+label.pack()
+text.pack()
 root.mainloop()
