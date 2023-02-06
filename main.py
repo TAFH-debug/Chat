@@ -92,7 +92,7 @@ con_btn = Button(frame2,
 #endregion
 
 #chnl = Channel(channels, "Hello")
-#message = Message(messages, "Shachi", "Hellow")
+#message = Message(messages, "Shachi", "Legenda")
 lbl = Label(frame3,
             text="Channels",
             font=("Helvetica", 32),
